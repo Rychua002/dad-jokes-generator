@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://source.unsplash.com/1024x768?fun");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.card {
+    padding: 50px;
+    width: 100%;
+    border-radius: 40px;
+    margin: 2em;
+    max-width: 500px;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.8;
+    min-width: 350px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+button {
+    color: #ffa260;
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+
+}
+
+.button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
