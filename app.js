@@ -1,9 +1,12 @@
-const content = document.querySelector('.content');
-const g_Button = document.querySelector('.button');
 
-g_Button.addEventListener('click', generateJoke);
+document.querySelector('.button').addEventListener('click', function(){
 
-generateJoke();
+    generateJoke();
+    
+});
+
+
+
 
 async function generateJoke() {
     const jokeRes = await fetch('https://icanhazdadjoke.com/', {
@@ -11,7 +14,7 @@ async function generateJoke() {
             'Accept': 'application/json'
         }
     });
-    const joke = await jokeRes.json();
-    content.innerText =joke.joke;
+    const joke = await jokeRes.json()
+    document.body.style.backgroundImage = 'url("https://source.unsplash.com/1024x768?laughing")';
+    document.querySelector('.content').innerText =joke.joke;
 };
-
